@@ -1,116 +1,162 @@
+
 .logo
 {
-    height:50;
-    width:50;
-    padding-right: 20;
+	height:50px;
+	width:50px;
+	padding-right: 20px;
 }
 
 .header {
-    text-align:center;
+	text-align:center;
 }
 
 .heading 
 {
-    display:inline;
-    font-size: 42;
-    /* float:none;
-    margin-left:12%;
-    text-align:center; */
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	display:inline;
+	font-size: 42px;
+	/* float:none;
+	margin-left:12%;
+	text-align:center; */
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.body-and-nav {
+	max-width:840px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.body{
+	align-self: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
 .nav {
-    list-style-type: none;
-    overflow: hidden;
+	list-style-type: none;
+	overflow: hidden;
+	padding-left: 0px;
 }
 
 
 .nav-item {
-    font-size: 14;
-    float: left;
 
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	float: left;
+	width:24%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
 .nav-item a {
-    text-decoration: none;
-    display: block;
-    padding-left: 12m;
-    padding-right: 4vw;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-    color:gray;
+	text-decoration: none;
+	display: block;
+	padding: 14px;
+	color:gray;
+	text-align: center;
 }
 
 
 .nav-item a:hover {
-    background-color: rgb(255, 251, 0);
-    color:black;
+	color:black;
+	text-decoration: underline;
 }
 
 
 .breaking-news-image
 {
-    width:400;
-    height:300;
-    float: left;
+	max-width: 430px;
+	margin-bottom: 16px;
+	width:100%;
+	height:auto;
+	float: left;
+	border-radius: 20px;
 }
 
+
 .top-news-list {
-    width: 400;
-    height: 300;
-    float:left;
-    list-style-type: none;
-    overflow: hidden;
+	float:left;
+	margin-top: 0px;
+	padding-left: 8px;
+	list-style-type: none;
+	overflow: hidden;
+	max-width: 100%;
+	max-width: 400;
+	
+}
+
+
+.top-news-list h4 {
+	margin-top: 0px;
+	padding-top:0px;
 }
 
 
 .top-news-item {
-    font-size: 14;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
 
 
 .top-news-item a {
-    text-decoration: none;
-    color:gray;
+	text-decoration: none;
+	color:gray;
 }
 
 
-.team-scores-table {
-    width: 400;
-    height: 300;
-    float:left;
-}
-
-.filler {
-    height:2000;
+.team-scores table {
+	max-width: 430px;
+	border-collapse: collapse;
+	width:100%;
+	height:auto;
 }
 
 
-table {
-    border-collapse: collapse;
-    width: 100%;
+.team-scores td, .team-scores th {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 12px 8px ;
+	font-size: 11px;
 }
 
 
-td, th {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px 50px;
-    font-size: 11;
-}
-
-
-th {
+.team-scores th {
 background: rgba(119, 196, 248, 0.418);
 }
 
 
-tr:nth-child(odd) {
-    background: rgba(189, 229, 255, 0.418);
+.team-scores tr:nth-child(odd) {
+	background: rgba(189, 229, 255, 0.418);
+}
+
+
+.footer{
+	clear: both;
+
+}
+
+.footer ul{
+	list-style-type: none;
+	overflow: hidden;
+	padding-left: 0;
+}
+
+
+.footer-item {
+	font-size: 14;
+	float: left;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	width: 30%;
+}
+
+
+.footer-item a {
+	text-decoration: none;
+	display: block;
+	color:gray;
+	text-align: center;
 }

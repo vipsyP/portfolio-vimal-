@@ -72,25 +72,18 @@
 	width:100%;
 	height:auto;
 	float: left;
-	border-radius: 20px;
 }
 
 
 .top-news-list {
 	float:left;
-	margin-top: 0px;
+	margin-top: 8px;
 	padding-left: 8px;
 	list-style-type: none;
-	overflow: hidden;
-	max-width: 100%;
 	max-width: 400;
+	max-height:285;
+	overflow: scroll;
 	
-}
-
-
-.top-news-list h4 {
-	margin-top: 0px;
-	padding-top:0px;
 }
 
 
@@ -100,6 +93,21 @@
 
 }
 
+
+.top-news-list p {
+	font-size: 16px;
+	display:inline;
+	color:gray;
+}
+
+.more {
+	margin-top: 0px;
+	padding-top:0px;
+	text-align:right;
+	float:right;
+	margin-right:8px;
+
+}
 
 .top-news-item a {
 	text-decoration: none;
@@ -121,16 +129,19 @@
 	text-align: left;
 	padding: 12px 8px ;
 	font-size: 11px;
+	color: #424242;
 }
 
 
 .team-scores th {
 background: rgba(119, 196, 248, 0.418);
+
 }
 
 
 .team-scores tr:nth-child(odd) {
 	background: rgba(189, 229, 255, 0.418);
+
 }
 
 

@@ -1,23 +1,26 @@
-
+* {
+	font-family: 'Roboto';
+}
 .logo
 {
-	height:50px;
-	width:50px;
-	padding-right: 20px;
+	height:48px;
+	width: auto;
+	padding: 2px 0px;
 }
 
 .header {
 	text-align:center;
+	font-weight: 300;
+	color:  #212121;
+	margin-bottom: 8px;
+	padding-bottom: 8px;
 }
 
 .heading 
 {
 	display:inline;
-	font-size: 42px;
-	/* float:none;
-	margin-left:12%;
-	text-align:center; */
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:46px;
+	font-weight: 300;
 }
 
 .body-and-nav {
@@ -46,7 +49,6 @@
 	font-size: 12px;
 	float: left;
 	width:24%;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
@@ -65,49 +67,77 @@
 }
 
 
-.breaking-news-image
-{
-	max-width: 430px;
-	margin-bottom: 16px;
-	width:100%;
-	height:auto;
+.breaking-news {
+	position:relative;
 	float: left;
 }
 
 
+.text-overlay {
+	width:100%;
+	height:auto;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	margin:0px;
+	box-sizing:border-box;
+	padding:0px 8px;
+	background: rgba(0, 0, 0, 0.568);
+	color:white;
+}
+
+
+.breaking-news-image
+{
+	width:100%;
+}
+
+.breaking-news p
+{
+	font-size: 12px;
+}
+
+
+.text-overlay h3
+{
+	font-weight:950;
+}
+
+
 .top-news-list {
+	box-sizing: border-box;
 	float:left;
-	margin-top: 8px;
+	margin-top: 16px;
 	padding-left: 8px;
-	list-style-type: none;
-	max-width: 400;
-	max-height:285;
+	list-style-type: none	;
+	width:100%;
+	height:280;
 	overflow: scroll;
 	
 }
 
 
-.top-news-item {
-	font-size: 14px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
+.top-news-header {
+	margin-bottom:0px;
 }
 
 
-.top-news-list p {
+.top-news-heading {
 	font-size: 16px;
 	display:inline;
 	color:gray;
 }
 
+
 .more {
-	margin-top: 0px;
-	padding-top:0px;
 	text-align:right;
 	float:right;
-	margin-right:8px;
-
+	margin-right:24px;
+	text-decoration: none;	
+	color:gray;
+	font-size: 12px;
 }
+
 
 .top-news-item a {
 	text-decoration: none;
@@ -115,8 +145,17 @@
 }
 
 
+.top-news-item {
+	font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+	padding: 8px 0px;
+
+}
+
+
 .team-scores table {
-	max-width: 430px;
+	 border-color: grey;	
+	box-sizing: border-box;
 	border-collapse: collapse;
 	width:100%;
 	height:auto;
@@ -124,24 +163,42 @@
 
 
 .team-scores td, .team-scores th {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	border: 1px solid #dddddd;
 	text-align: left;
 	padding: 12px 8px ;
-	font-size: 11px;
+	font-size: 12px;
 	color: #424242;
 }
 
 
+.team-scores td:nth-child(3){
+	text-align:right;
+}
+
+
 .team-scores th {
-background: rgba(119, 196, 248, 0.418);
+background: #78909c;
+color: #eceff1;
+font-weight: 300;
 
 }
 
 
 .team-scores tr:nth-child(odd) {
-	background: rgba(189, 229, 255, 0.418);
+	background:#eceff1;
 
+}
+
+
+.winner {
+	font-weight: bold;
+}
+
+
+.weather-forecast-table {
+	height:300px;
+	width:100%;
+	background: yellow;
 }
 
 
@@ -160,7 +217,7 @@ background: rgba(119, 196, 248, 0.418);
 .footer-item {
 	font-size: 14;
 	float: left;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	width: 30%;
 }
 
@@ -170,4 +227,49 @@ background: rgba(119, 196, 248, 0.418);
 	display: block;
 	color:gray;
 	text-align: center;
+}
+
+
+@media only screen and (min-width: 550px) {
+	.logo {
+	height:72px;
+	}
+	
+	.breaking-news {
+		width: 61%;
+	}
+
+	.weather-forecast-table {
+		height:300px;
+		width:38%;
+		height:30%;
+		background: yellow;
+	}
+
+}
+
+@media only screen and (min-width: 700px) {
+	.breaking-news {
+		width: 50%;
+		height:40%;
+		background-size: cover;
+		object-position: center;
+		object-fit:cover;
+	}
+	
+	.breaking-news-image {
+		height: 100%;
+		background-size: cover;
+		object-position: center;
+		object-fit:cover;
+	}
+
+	.team-scores table {
+		max-width: 405px;
+
+	}
+
+	.top-news-list {
+		max-width: 400;
+	}
 }
